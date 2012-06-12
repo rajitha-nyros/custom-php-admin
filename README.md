@@ -80,8 +80,6 @@ custom_php_admin.sql - This file contains the data to create admins table and hi
 
 <img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/login.JPG
 " alt="login" title="login">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/dashboard.JPG
-" alt="dashboard" title="dashboard">
 <img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/datarecords.JPG
 " alt="datarecords" title="datarecords">
 <img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/addnew.JPG
