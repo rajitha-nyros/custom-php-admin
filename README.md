@@ -74,3 +74,32 @@ includes/js - This file contains all js file that is included in the application
 
 custom_php_admin.sql - This file contains the data to create admins table and history table.
 
+
+
+
+
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/login.JPG
+" alt="login" title="login">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/dashboard.JPG
+" alt="dashboard" title="dashboard">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/datarecords.JPG
+" alt="datarecords" title="datarecords">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/addnew.JPG
+" alt="addnew" title="addnew">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/export.JPG
+" alt="export" title="export">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/history.JPG
+" alt="history" title="history">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/show.JPG
+" alt="show" title="show">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/edit.JPG
+" alt="edit" title="edit">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/delete.JPG
+" alt="delete" title="delete">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/Historys.JPG
+" alt="History" title="History">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/filter.JPG
+" alt="filter" title="filter">
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/multidelete.JPG
+" alt="multidelete" title="multidelete">
+
