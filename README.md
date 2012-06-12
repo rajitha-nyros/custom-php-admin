@@ -78,28 +78,28 @@ custom_php_admin.sql - This file contains the data to create admins table and hi
 
 
 
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/login.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/login.JPG
 " alt="login" title="login">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/dashboard.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/dashboard.JPG
 " alt="dashboard" title="dashboard">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/datarecords.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/datarecords.JPG
 " alt="datarecords" title="datarecords">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/addnew.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/addnew.JPG
 " alt="addnew" title="addnew">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/export.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/export.JPG
 " alt="export" title="export">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/history.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/history.JPG
 " alt="history" title="history">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/show.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/show.JPG
 " alt="show" title="show">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/edit.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/edit.JPG
 " alt="edit" title="edit">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/delete.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/delete.JPG
 " alt="delete" title="delete">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/Historys.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/Historys.JPG
 " alt="History" title="History">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/filter.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/filter.JPG
 " alt="filter" title="filter">
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/blob/master/screenshots/multidelete.JPG
+<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/multidelete.JPG
 " alt="multidelete" title="multidelete">
 
