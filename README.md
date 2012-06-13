@@ -9,9 +9,9 @@ custom-php-admin for dashboard  with CRUD operations
 
 ******************************************
 
-  custom-PHP-Admin application is flexible and provides an easy-to-use interface for managing your data built on core PHP.
+  custom-php-admin application is flexible and provides an easy-to-use interface for managing your data built on core PHP.
   
-   custom-PHP-Admin is an inspiration from Rails admin. Hyperlink is https://github.com/sferik/rails_admin
+  custom-php-admin is an inspiration from Rails admin. Hyperlink is https://github.com/sferik/rails_admin
 
   
 2.FEATURES
