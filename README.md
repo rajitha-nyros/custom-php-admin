@@ -11,7 +11,7 @@ Custom-php-admin for dashboard  with CRUD operations
 
   Custom-PHP-Admin application is flexible and provides an easy-to-use interface for managing your data built on core PHP.
   
-   Custom-PHP-Admin is an inspiration from Rails admin. Hyperlink for Rails admin http://rails-admin-tb.herokuapp.com/admin/
+   Custom-PHP-Admin is an inspiration from Rails admin. 
 
   
 2.FEATURES
