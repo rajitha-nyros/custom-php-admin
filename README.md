@@ -1,7 +1,7 @@
-Custom-php-admin
+custom-php-admin
 ================
 
-Custom-php-admin for dashboard  with CRUD operations
+custom-php-admin for dashboard  with CRUD operations
 
 
 
@@ -9,9 +9,9 @@ Custom-php-admin for dashboard  with CRUD operations
 
 ******************************************
 
-  Custom-PHP-Admin application is flexible and provides an easy-to-use interface for managing your data built on core PHP.
+  custom-PHP-Admin application is flexible and provides an easy-to-use interface for managing your data built on core PHP.
   
-   Custom-PHP-Admin is an inspiration from Rails admin. 
+   custom-PHP-Admin is an inspiration from Rails admin. Hyperlink is https://github.com/sferik/rails_admin
 
   
 2.FEATURES
@@ -53,7 +53,7 @@ You must have PHP 5.0 or greater installed.
 
 Below is a list of files used in this application:
 
-custom-php-admin.php - This is the file for user login form
+index.php - This is the file for user login form
 
 dashboard.php - This is the file for showing row count of table with progress bar.
 
@@ -81,8 +81,7 @@ custom_php_admin.sql - This file contains the data to create admins table and hi
 
 
 
-<img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/login.JPG
-" alt="login" title="login">
+
 <img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/datarecords.JPG
 " alt="datarecords" title="datarecords">
 <img style="max-width:100%;" src="https://github.com/rajitha-nyros/Custom-php-admin/raw/master/screenshots/addnew.JPG
