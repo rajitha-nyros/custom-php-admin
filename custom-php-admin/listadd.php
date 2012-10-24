@@ -61,10 +61,10 @@ while ($list = mysql_fetch_assoc($result))
  <?php }
 if(isset($_POST['save1'])=='Save')
 	{
-		 $keys = array_keys($_POST);
-		 $values = array_values($_POST);
-		 $slice_values = array_slice($values,1,2);
-		 $slices_keys = array_slice($keys,1,2);
+		$keys = array_keys($_POST);
+		$values = array_values($_POST);
+		$slice_values = array_slice($values,1,2);
+		$slices_keys = array_slice($keys,1,2);
 		$insert_keys = implode(",",$slices_keys);
 		$insert_values = implode(",",$slice_values);
 		$statement = $_REQUEST['tb_name'];
@@ -87,11 +87,10 @@ if(isset($_POST['save1'])=='Save')
 				@header('Location:listadd.php?action=success');
 			}
 		else{
-					@header('Location:listadd.php?action=failure');
+				@header('Location:listadd.php?action=failure');
 			}
 	}
-	if(isset($_POST['Save2'])=='Save and add another')
-				{
+	if(isset($_POST['Save2'])=='Save and add another'){
 					extract($_POST);
 					$keys = array_keys($_POST);
 					$values = array_values($_POST);
@@ -122,8 +121,7 @@ if(isset($_POST['save1'])=='Save')
 							});
 						</script>';
 				}
-	if(isset($_POST['Save3'])=='Save and edit')
-				{
+	if(isset($_POST['Save3'])=='Save and edit'){
 					extract($_POST);
 					$keys = array_keys($_POST);
 					$values = array_values($_POST);
@@ -135,8 +133,7 @@ if(isset($_POST['save1'])=='Save')
 					$time = date('y-m-d H:i');
 					$insert="insert into $statement($insert_keys,Created_at)values('".implode("','",$slice_values)."','$time')";
 					$ins = mysql_query($insert) or die(mysql_error());
-					if($ins)
-					{
+					if($ins){
 						$id1 = mysql_query('SELECT '.$row[0]['Field'].' FROM {$statement} ORDER BY '.$row[0]['Field'].' ASCE LIMIT 1');
 						$id = mysql_insert_id();
 						$tab = $_REQUEST['tb_name'];
@@ -181,10 +178,10 @@ if(isset($_POST['save1'])=='Save')
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Add filter <b class="caret"></b></a>
                 <ul class="dropdown-menu myclass">
 			<? for($i=0;$i<count($row[$i])-1;$i++) {
-                    if($row[$i][Field] !=$row[2][Field]){ ?>
-                    <li id="<? echo  $row[$i]['Field']; ?>"><a href="<? echo  $row[$i][Field]; ?>"  data-toggle="tab"><? echo $row[$i][Field];  ?></a></li>
-                    <? 	}
-                    }  ?>
+			if($row[$i][Field] !=$row[2][Field]){ ?>
+			<li id="<? echo  $row[$i]['Field']; ?>"><a href="<? echo  $row[$i][Field]; ?>"  data-toggle="tab"><? echo $row[$i][Field];  ?></a></li>
+			<? 	}
+			}  ?>
                 </ul>
             </li>
             <li class="dropdown">
@@ -208,7 +205,7 @@ if(isset($_POST['save1'])=='Save')
         </div><!--tabbale-->
 
         <div class="del" style="display:none;">
-				<?php
+		<?php
                 if(isset($_GET['act']) && ($_GET['act']=='remove'))
                 {
                 $squ =  mysql_query("DELETE  FROM '".$_REQUEST['tb_name']."'");
@@ -220,10 +217,10 @@ if(isset($_POST['save1'])=='Save')
                 ?>
                 <span id="inform"><? echo $_REQUEST['tb_name']; ?></span><br><br>
                 <?
-                $res24 = mysql_query('SELECT * FROM '.$_REQUEST['tb_name'].'');
+                $res24 = mysql_query('SELECT * FROM '.$_REQUEST['tb_name']);
 
                 while($row3 = mysql_fetch_array($res24)){ ?>
-                <span class ="remov" ><b><? echo $_REQUEST['tb_name']; ?> </b></span>&amp;nbsp;
+                <span class ="remov" ><b><? echo $_REQUEST['tb_name']; ?> </b></span>&amp;
                 <a href="listadd.php?tb_name=<? echo $_REQUEST['tb_name']; ?>"><? echo $_REQUEST['tb_name']; ?> #<?php echo $row3[0]; ?><br><br></a>
                 <? } ?>
                 <div id="block">
@@ -237,15 +234,14 @@ if(isset($_POST['save1'])=='Save')
                     <div class="tab-pane fade in active home1" id="home">
                             <div id="refresh">
                                     <form method="post" action="" name="search_form" id="search_form">
-
-                                            <div  id="search_block" style="display:none;">
+                                            <div id="search_block" style="display:none;">
                                                     <p>
                                                             <span class="label label-info form-label" id="myspan" style="padding:10px;"><a href="?row=<?  ?>&amp;tb_name=<?php echo $_REQUEST['tb_name'];  ?>" ><i class="icon-trash icon-white"></i>
                                                             </a><span id="span_search"> </span>
-                                                            </span>&amp;nbsp;
+                                                            </span>&amp;
                                                             <input type="hidden" name="table_name" id="table_name" value="<?php echo $_REQUEST['tb_name']; ?>" />
                                                             <input type="hidden" id="search_key" name="search_key" value="" />
-                                                            <input class="input-small"  id="search_value" type="text"  style="margin-top:10px;" />
+                                                            <input class="input-small" id="search_value" type="text" style="margin-top:10px;" />
                                                     </p>
                                             </div>
                                     <input class="input-small filter" type="text" placeholder="Filter" style="margin-top:10px;">
@@ -259,21 +255,20 @@ if(isset($_POST['save1'])=='Save')
                                     <table class="table table-bordered table-striped" style="margin-left:0px;" >
                                             <tr>
                                             <?
-                                            $tab_result = 'DESCRIBE '.$_REQUEST['tb_name'];
-                                             $tab_query = mysql_query($tab_result);
-                                             $row2 = mysql_fetch_array($tab_query);
-                                            for($i=0;$i<count($row2);$i++) {
-                                            if($row2[$i] === '' || $row2[$i] === 'NULL'){?>
+                                            $result = mysql_query("SHOW COLUMNS FROM ".$_REQUEST['tb_name']);
+					    $fieldnames=array();
+						if (mysql_num_rows($result) > 0) {
+							while ($row2 = mysql_fetch_assoc($result)) {?>
                                                 <th id="info1" style="padding-left:15px;">
-                                                        <? echo ucwords($row[$i][Field]); ?>
-                                                        <a id="cart_sort" href="?sort=<? echo  $row[$i][Field]; ?>&amp;tb_name=<? echo $_REQUEST['tb_name'] ;?>" style="text-decoration:none; color:black;margin-right:10px;"><span class="caret car1" style="margin-right:-20px;margin-top:10px;"></span></a>
+                                                        <? echo ucwords($row2[Field]); ?>
+                                                        <a id="cart_sort" href="?sort=<? echo $row2[Field]; ?>&amp;tb_name=<? echo $_REQUEST['tb_name'] ;?>" style="text-decoration:none; color:black;margin-right:10px;"><span class="caret car1" style="margin-right:-20px;margin-top:10px;"></span></a>
                                                 </th>
                                             <?
                                             }}	 ?>
+                                            <th id="info1" style="padding-left:15px;"></th>
                                             </tr><tr>
                                                     <?php
                                                     $page = (int) (!isset($_GET["page"]) ? 1 : $_GET["page"]);
-                                                    $limit = 4;
                                                     $startpoint = ($page * $limit) - $limit;
                                                     //to make pagination
                                                     $statement = $_REQUEST['tb_name'];
@@ -382,13 +377,13 @@ if(isset($_POST['save1'])=='Save')
                     <p id="user_informatiom">
                             <form class="form-inline userinfo" name="form" method="post" onSubmit="validate();" action="" >
                                 <fieldset>
-                                        		<label><h4> &nbsp;&nbsp;&nbsp;<? echo $_REQUEST['tb_name']; ?></h4></label>
+                                        <label><h4><? echo $_REQUEST['tb_name']; ?></h4></label>
                                         <input type="hidden" name="users_login" id="users_login" value="users_login">
                                         <div class="login_user">
                                                 <!--user qualification field-->
                                                 <p>
                                                 <? for($i=1;$i<count($row[$i])-3;$i++) {?>
-                                                        <label for="<? echo $row[$i][Field]; ?>">&amp;nbsp;<? echo ucwords($row[$i][Field]); ?></label>:<br />
+                                                        <label for="<? echo $row[$i][Field]; ?>"><? echo ucwords($row[$i][Field]); ?></label>:<br />
                                                         <input type="text" id="<? echo $row[$i][Field]; ?>" class="myDiv"  maxlenght="50" name="<? echo $row[$i][Field]; ?>" required="required"/><br>
 
                                                 <? } ?>
@@ -427,7 +422,6 @@ if(isset($_POST['save1'])=='Save')
                                             <? echo $row[$i][Field]; ?><br>
                                             </label>
                                         <? } ?>
-
                                     </div>
                                 </div>
                             </div>
